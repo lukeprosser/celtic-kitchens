@@ -2,9 +2,9 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import Bio from "../components/blog/Bio"
-import Layout from "../components/layout/Layout"
-import SEO from "../components/layout/Seo"
+import Bio from "../components/blog/bio"
+import Layout from "../components/global/layout"
+import SEO from "../components/global/seo"
 import { rhythm } from "../utils/typography"
 
 type Data = {

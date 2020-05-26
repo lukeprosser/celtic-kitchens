@@ -1,0 +1,43 @@
+@import "./layout.scss";
+
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .nav-mobile-brand {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .nav-mobile-links {
+    display: none;
+  }
+
+  // Hamburger
+  .nav-mobile-menu,
+  .nav-mobile-menu::before,
+  .nav-mobile-menu::after {
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background-color: $primary-color;
+  }
+  .nav-mobile-menu::before,
+  .nav-mobile-menu::after {
+    position: absolute;
+    content: "";
+  }
+  .nav-mobile-menu::before {
+    bottom: 7px;
+  }
+  .nav-mobile-menu::after {
+    top: 7px;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav-mobile {
+    display: none;
+  }
+}

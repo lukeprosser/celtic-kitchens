@@ -1,0 +1,28 @@
+@import "./layout.scss";
+
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-desktop-brand {
+      margin: 0;
+      padding-bottom: 2px; // Compensate for nav-link border
+      font-size: 1.4rem;
+    }
+
+    .nav-desktop-link {
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-desktop-link:hover {
+      color: rgba(0, 0, 0, 0.85);
+      border-bottom: 2px solid $secondary-color;
+    }
+  }
+}
