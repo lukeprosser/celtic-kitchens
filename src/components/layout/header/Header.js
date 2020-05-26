@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "./header.scss"
+import "./Header.scss"
 
 const Header = ({ title }) => {
   return (

@@ -5,7 +5,7 @@ module.exports = {
       name: `Amanda Price`,
       summary: `- Marketing Manager`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Luxury bespoke kitchens in South Wales`,
     siteUrl: `https://celtickitchens.netlify.com/`,
     social: {
       twitter: `createdeluxe`,
