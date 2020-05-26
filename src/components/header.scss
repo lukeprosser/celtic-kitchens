@@ -1,0 +1,71 @@
+@import "./layout.scss";
+
+.header {
+  padding-bottom: 1rem;
+
+  .header-brand {
+    margin: 0;
+    padding-bottom: 2px; // Compensate for nav-link border
+    font-size: 1.4rem;
+  }
+
+  .header-nav-link {
+    border-bottom: 2px solid transparent;
+  }
+
+  .header-nav-link:hover {
+    color: rgba(0, 0, 0, 0.85);
+    border-bottom: 2px solid $secondary-color;
+  }
+
+  // Mobile navigation
+  .header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-mobile-nav {
+      display: none;
+    }
+
+    .header-mobile-menu,
+    .header-mobile-menu::before,
+    .header-mobile-menu::after {
+      position: relative;
+      width: 25px;
+      height: 2px;
+      background-color: $primary-color;
+    }
+    .header-mobile-menu::before,
+    .header-mobile-menu::after {
+      position: absolute;
+      content: "";
+    }
+    .header-mobile-menu::before {
+      bottom: 7px;
+    }
+    .header-mobile-menu::after {
+      top: 7px;
+    }
+  }
+
+  // Desktop navigation
+  .header-desktop {
+    display: none;
+  }
+}
+
+// Desktop
+@media (min-width: 700px) {
+  .header {
+    .header-mobile {
+      display: none;
+    }
+
+    .header-desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

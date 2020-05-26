@@ -1,0 +1,12 @@
+$primary-color: rgba(0, 0, 0, 0.85);
+$secondary-color: #e57900;
+
+a {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+}
+
+a:hover {
+  color: $secondary-color;
+  text-decoration: none;
+}
