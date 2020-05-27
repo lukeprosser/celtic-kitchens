@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/global/layout"
 import SEO from "../components/global/seo"
+import Hero from "../components/hero"
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -10,8 +11,7 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <h1>{siteTitle}</h1>
-      <p>Welcome to {siteTitle}</p>
+      <Hero />
     </Layout>
   )
 }

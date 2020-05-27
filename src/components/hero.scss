@@ -1,0 +1,56 @@
+@import "./global/layout.scss";
+
+.hero {
+  width: 100%;
+  height: 400px;
+  background: url("../../content/assets/hero/kitchen-01-hero.jpg") no-repeat
+    center center/cover;
+  text-align: center;
+  display: flex;
+
+  .hero-content {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    * {
+      color: #fff;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .hero {
+    .hero-content {
+      width: 60%;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 700px) {
+  .hero {
+    height: 576px;
+
+    .hero-content {
+      max-width: 600px;
+    }
+  }
+}
