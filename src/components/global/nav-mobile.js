@@ -3,10 +3,20 @@ import { Link } from "gatsby"
 
 import "./nav-mobile.scss"
 
+const toggleMenu = () => {
+  const navMobLinks = document.querySelector(".nav-mobile-links")
+  navMobLinks.classList.toggle("active")
+}
+
 const NavMobile = ({ title }) => {
   return (
     <nav className="nav-mobile">
       <h1 className="nav-mobile-brand">{title}</h1>
+      <div className="nav-mobile-menu" onClick={() => toggleMenu()}>
+        <span className="nav-mobile-menu-bar1"></span>
+        <span className="nav-mobile-menu-bar2"></span>
+        <span className="nav-mobile-menu-bar3"></span>
+      </div>
       <div className="nav-mobile-links">
         <Link className="nav-mobile-link" to="/portfolio">
           Portfolio
@@ -21,7 +31,6 @@ const NavMobile = ({ title }) => {
           Contact
         </Link>
       </div>
-      <span className="nav-mobile-menu"></span>
     </nav>
   )
 }
