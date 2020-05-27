@@ -2,6 +2,12 @@ $primary-color: rgba(0, 0, 0, 0.85);
 $secondary-color: #e57900;
 $ternary-color: #ee9530;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
