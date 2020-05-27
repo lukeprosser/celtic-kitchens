@@ -6,17 +6,23 @@ import "./nav-desktop.scss"
 const NavDesktop = ({ title }) => {
   return (
     <nav className="nav-desktop">
-      <Link className="nav-desktop-link" to="/portfolio">
+      <Link
+        className="nav-desktop-link"
+        activeClassName="active"
+        to="/portfolio"
+      >
         Portfolio
       </Link>
-      <Link className="nav-desktop-link" to="/process">
+      <Link className="nav-desktop-link" activeClassName="active" to="/process">
         Process
       </Link>
-      <h1 className="nav-desktop-brand">{title}</h1>
-      <Link className="nav-desktop-link" to="/blog">
+      <Link to="/">
+        <h1 className="nav-desktop-brand">{title}</h1>
+      </Link>
+      <Link className="nav-desktop-link" activeClassName="active" to="/blog">
         Blog
       </Link>
-      <Link className="nav-desktop-link" to="/contact">
+      <Link className="nav-desktop-link" activeClassName="active" to="/contact">
         Contact
       </Link>
     </nav>

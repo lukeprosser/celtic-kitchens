@@ -19,10 +19,24 @@
     .nav-desktop-link {
       border-bottom: 2px solid transparent;
     }
-
     .nav-desktop-link:hover {
       color: rgba(0, 0, 0, 0.85);
+    }
+    .nav-desktop-link:after {
+      display: block;
+      content: "";
       border-bottom: 2px solid $secondary-color;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    .nav-desktop-link:hover:after {
+      transform: scaleX(1);
+    }
+    .nav-desktop-link.active:after {
+      display: block;
+      content: "";
+      border-bottom: 2px solid $secondary-color;
+      transform: scaleX(1);
     }
   }
 }
