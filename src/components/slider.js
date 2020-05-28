@@ -1,6 +1,8 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
-// import "./hero.scss"
 import "./slider.scss"
 
 const auto = true
@@ -75,10 +77,10 @@ const Hero = () => {
         </div>
         <div className="slider-buttons">
           <button className="slider-buttons-prev" onClick={() => prevSlide()}>
-            {"<"}
+            <FontAwesomeIcon icon={faArrowLeft} />
           </button>
           <button className="slider-buttons-next" onClick={() => nextSlide()}>
-            {">"}
+            <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
       </div>

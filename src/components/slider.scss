@@ -63,12 +63,12 @@
   .slider-buttons {
     .slider-buttons-prev,
     .slider-buttons-next {
-      border: 2px solid #fff;
+      border: none;
       border-radius: 50%;
       background-color: transparent;
       color: #fff;
       cursor: pointer;
-      padding: 0 10px;
+      padding: 0px 7px;
       outline: none;
     }
 
@@ -81,19 +81,34 @@
     .slider-buttons-prev {
       position: absolute;
       top: 50%;
-      left: 15px;
+      left: 5px;
     }
 
     .slider-buttons-next {
       position: absolute;
       top: 50%;
-      right: 15px;
+      right: 5px;
     }
   }
 }
 
 @media (min-width: 600px) {
   .slider {
+    .slider-buttons {
+      .slider-buttons-prev,
+      .slider-buttons-next {
+        font-size: 1.3rem;
+      }
+
+      .slider-buttons-prev {
+        left: 15px;
+      }
+
+      .slider-buttons-next {
+        right: 15px;
+      }
+    }
+
     .slider-content {
       width: 60%;
     }

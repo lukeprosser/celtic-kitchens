@@ -1,0 +1,38 @@
+@import "./layout.scss";
+
+.footer {
+  .footer-content {
+    width: 100%;
+
+    .footer-content-item {
+      width: 100%;
+      padding: 0.3rem 0;
+      text-align: center;
+
+      .footer-content-item-social {
+        font-size: 1.2rem;
+
+        .footer-content-item-social-link {
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .footer {
+    .footer-content {
+      display: flex;
+      justify-content: space-evenly;
+
+      .footer-content-item {
+        .footer-content-item-social {
+          .footer-content-item-social-link {
+            padding: 0 0 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
