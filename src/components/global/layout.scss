@@ -36,3 +36,36 @@ a:hover {
 .button:hover {
   background-color: $ternary-color;
 }
+
+.page-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .page-section-header {
+    font-size: 1.4rem;
+  }
+  .page-section-header:after {
+    content: "";
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    border-bottom: 2px solid $secondary-color;
+  }
+}
+
+@media (min-width: 500px) {
+  .page-section {
+    .page-section-header:after {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .page-section {
+    .page-section-header:after {
+      width: 40%;
+    }
+  }
+}

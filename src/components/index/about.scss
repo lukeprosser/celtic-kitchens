@@ -1,0 +1,25 @@
+@import "../global/layout.scss";
+
+.about {
+  text-align: center;
+  .container {
+    .about-content {
+      .about-content-item {
+        padding: 0 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .about {
+    .container {
+      .about-content {
+        display: flex;
+        .about-content-item {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

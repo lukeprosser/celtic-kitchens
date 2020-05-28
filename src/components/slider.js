@@ -61,7 +61,7 @@ if (auto) {
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="slider">
         <div className="slider-slides">
           <div className="slider-slide slider-current"></div>
@@ -84,7 +84,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
