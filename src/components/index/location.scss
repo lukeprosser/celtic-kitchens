@@ -1,0 +1,59 @@
+@import "../global/layout.scss";
+
+.location {
+  background-color: $light-grey;
+  text-align: center;
+
+  .container {
+    .location-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .location-content-address {
+        margin-bottom: 2rem;
+
+        .location-content-address-detail {
+          margin: 0;
+        }
+        .location-content-address-detail:last-of-type {
+          margin: 1rem 0;
+        }
+      }
+
+      .location-content-map {
+        .location-content-map-image {
+          min-width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .location {
+    .container {
+      .location-content {
+        flex-direction: row;
+
+        .location-content-address {
+          margin-bottom: 0;
+
+          .page-section-header {
+            font-size: 1.2rem;
+          }
+          .page-section-header:after {
+            width: 100%;
+          }
+        }
+
+        .location-content-map {
+          .location-content-map-image {
+            max-width: 680px;
+          }
+        }
+      }
+    }
+  }
+}

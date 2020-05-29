@@ -5,61 +5,61 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 import "./slider.scss"
 
-const auto = true
-const intervalTime = 5000
-let slideInterval
+const Slider = ({ location }) => {
+  const auto = false
+  const intervalTime = 5000
+  let slideInterval
 
-const prevSlide = () => {
-  const slides = document.querySelectorAll(".slider-slides .slider-slide")
-  // Get current class
-  const current = document.querySelector(".slider-current")
-  // Remove current class
-  current.classList.remove("slider-current")
+  const prevSlide = () => {
+    const slides = document.querySelectorAll(".slider-slides .slider-slide")
+    // Get current class
+    const current = document.querySelector(".slider-current")
+    // Remove current class
+    current.classList.remove("slider-current")
 
-  // Check for previous slide
-  if (current.previousElementSibling) {
-    // Add current class to previous sibling
-    current.previousElementSibling.classList.add("slider-current")
-  } else {
-    // Add current class to last
-    slides[slides.length - 1].classList.add("slider-current")
+    // Check for previous slide
+    if (current.previousElementSibling) {
+      // Add current class to previous sibling
+      current.previousElementSibling.classList.add("slider-current")
+    } else {
+      // Add current class to last
+      slides[slides.length - 1].classList.add("slider-current")
+    }
+
+    if (auto) {
+      clearInterval(slideInterval)
+      slideInterval = setInterval(nextSlide, intervalTime)
+    }
   }
 
+  const nextSlide = () => {
+    const slides = document.querySelectorAll(".slider-slides .slider-slide")
+    // Get current class
+    const current = document.querySelector(".slider-current")
+    // Remove current class
+    current.classList.remove("slider-current")
+
+    // Check for next slide
+    if (current.nextElementSibling) {
+      // Add current class to next sibling
+      current.nextElementSibling.classList.add("slider-current")
+    } else {
+      // Add current class to start
+      slides[0].classList.add("slider-current")
+    }
+
+    if (auto) {
+      clearInterval(slideInterval)
+      slideInterval = setInterval(nextSlide, intervalTime)
+    }
+  }
+
+  // Auto scroll
   if (auto) {
-    clearInterval(slideInterval)
+    // Run next slide at interval time
     slideInterval = setInterval(nextSlide, intervalTime)
   }
-}
 
-const nextSlide = () => {
-  const slides = document.querySelectorAll(".slider-slides .slider-slide")
-  // Get current class
-  const current = document.querySelector(".slider-current")
-  // Remove current class
-  current.classList.remove("slider-current")
-
-  // Check for next slide
-  if (current.nextElementSibling) {
-    // Add current class to next sibling
-    current.nextElementSibling.classList.add("slider-current")
-  } else {
-    // Add current class to start
-    slides[0].classList.add("slider-current")
-  }
-
-  if (auto) {
-    clearInterval(slideInterval)
-    slideInterval = setInterval(nextSlide, intervalTime)
-  }
-}
-
-// Auto scroll
-if (auto) {
-  // Run next slide at interval time
-  slideInterval = setInterval(nextSlide, intervalTime)
-}
-
-const Hero = () => {
   return (
     <section className="hero">
       <div className="slider">
@@ -88,4 +88,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Slider
