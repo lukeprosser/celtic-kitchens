@@ -1,0 +1,25 @@
+@import "../global/layout.scss";
+
+.testimonials {
+  text-align: center;
+  .container {
+    .testimonials-content {
+      .testimonials-content-item {
+        padding: 0 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .testimonials {
+    .container {
+      .testimonials-content {
+        display: flex;
+        .testimonials-content-item {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

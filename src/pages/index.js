@@ -6,6 +6,7 @@ import SEO from "../components/global/seo"
 import Slider from "../components/slider"
 import About from "../components/index/about"
 import Brands from "../components/index/brands"
+import Testimonials from "../components/index/testimonials"
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -15,7 +16,8 @@ const Index = ({ data, location }) => {
       <SEO title="Home" />
       <Slider />
       <About />
-      <Brands brandLogos={data.siemens} />
+      <Brands brandLogos={data.brandLogos} />
+      <Testimonials />
     </Layout>
   )
 }
@@ -29,24 +31,32 @@ export const pageQuery = graphql`
         title
       }
     }
-    siemens: file(relativePath: { eq: "brand-logos/siemens.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid
+    brandLogos: allFile(filter: { relativeDirectory: { eq: "brand-logos" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(maxWidth: 200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
   }
 `
 
-// export const brandLogos = graphql`
-//   query {
-//     siemens: file(relativePath: { eq: "brand-logos/siemens.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 500) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
+/**
+ * Reference for querying single image via relative path
+    export const brandLogos = graphql`
+      query {
+        siemens: file(relativePath: { eq: "brand-logos/siemens.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `
+ */

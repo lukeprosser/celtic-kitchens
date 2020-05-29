@@ -1,25 +1,31 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import "./brands.scss"
 
 const Brands = ({ brandLogos }) => {
-  console.log("brandLogos", brandLogos)
+  const images = brandLogos.edges
+
   return (
     <section className="page-section brands">
       <div className="container">
         <div className="brands-content">
-          <Image fluid={brandLogos.childImageSharp.fluid} alt="Siemens" />
+          {images.map(image => (
+            <Image
+              className="brands-content-logo"
+              key={image.node.id}
+              fluid={image.node.childImageSharp.fluid}
+            />
+          ))}
         </div>
       </div>
     </section>
   )
 }
 
-// Brands.propTypes = {
-//   data: PropTypes.object.isRequired,
-// }
+Brands.propTypes = {
+  brandLogos: PropTypes.object.isRequired,
+}
 
 export default Brands
