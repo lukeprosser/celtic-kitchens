@@ -5,18 +5,30 @@
   .container {
     .testimonials-content {
       .testimonials-content-item {
-        padding: 0 0.7rem;
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+
+        * {
+          margin-bottom: 0.5rem;
+        }
+
+        .testimonials-content-item-quote {
+          font-style: italic;
+        }
       }
     }
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .testimonials {
     .container {
       .testimonials-content {
         display: flex;
         .testimonials-content-item {
+          margin-bottom: 0;
+          padding: 0 0.7rem;
+          width: 100%;
           font-size: 0.9rem;
         }
       }
