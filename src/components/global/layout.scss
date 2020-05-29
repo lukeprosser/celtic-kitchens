@@ -31,11 +31,23 @@ a:hover {
   border: none;
   border-radius: 3px;
   background-color: $secondary-color;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .button:hover {
   background-color: $ternary-color;
+}
+.button a {
+  color: #fff;
+}
+
+.page-intro {
+  text-align: center;
+
+  .page-intro-blurb {
+    padding: 0;
+  }
 }
 
 .page-section {
@@ -65,6 +77,12 @@ a:hover {
 }
 
 @media (min-width: 700px) {
+  .page-intro {
+    .page-intro-blurb {
+      padding: 0 8rem;
+    }
+  }
+
   .page-section {
     .page-section-header:after {
       width: 40%;
