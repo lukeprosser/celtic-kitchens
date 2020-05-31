@@ -54,18 +54,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-/**
- * Reference for querying single image via relative path
-    export const brandLogos = graphql`
-      query {
-        siemens: file(relativePath: { eq: "brand-logos/siemens.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `
- */

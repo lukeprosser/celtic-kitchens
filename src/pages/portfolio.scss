@@ -1,0 +1,22 @@
+@import "../components/global/layout.scss";
+
+.portfolio {
+  .portfolio-content {
+    .page-section.portfolio-content-gallery {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .portfolio-content-gallery-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .portfolio-content-gallery-images-image {
+          min-width: 300px;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
