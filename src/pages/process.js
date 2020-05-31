@@ -24,7 +24,7 @@ const Process = ({ data, location }) => {
         <div className="process-content">
           <div className="page-intro">
             <div className="container">
-              <h1 className="page-intro-header">The Design Process</h1>
+              <h1 className="page-intro-header">The Process</h1>
               <p className="page-intro-blurb">
                 At Celtic Kitchens, we pride ourselves on our communication and
                 smooth delivery process. We'll work with you to create the

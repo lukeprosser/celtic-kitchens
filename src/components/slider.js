@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
@@ -73,7 +74,9 @@ const Slider = ({ location }) => {
         <div className="slider-content">
           <h2>Your kitchen, your way</h2>
           <p>Give us a call or visit our showroom today</p>
-          <button className="button">Enquire</button>
+          <button className="button">
+            <Link to="/contact">Enquire</Link>
+          </button>
         </div>
         <div className="slider-buttons">
           <button className="slider-buttons-prev" onClick={() => prevSlide()}>

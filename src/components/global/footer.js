@@ -14,11 +14,15 @@ const Footer = ({ title }) => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-content-item">
-            © {title} {new Date().getFullYear()}
+            <p>
+              © {title} {new Date().getFullYear()}
+            </p>
           </div>
           <div className="footer-content-item">
-            Built by {` `}
-            <a href="https://www.createdeluxe.com">CreateDeluxe</a>
+            <p>
+              Built by {` `}
+              <a href="https://www.createdeluxe.com">CreateDeluxe</a>
+            </p>
           </div>
           <div className="footer-content-item">
             <div className="footer-content-item-social">

@@ -1,13 +1,27 @@
 @import "./layout.scss";
 
 .footer {
+  background-color: $primary-color;
+  color: #fff;
+
   .footer-content {
     width: 100%;
 
     .footer-content-item {
+      padding: 0.5rem 0;
       width: 100%;
-      padding: 0.3rem 0;
       text-align: center;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: #fff;
+      }
+      a:hover {
+        color: $light-grey;
+      }
 
       .footer-content-item-social {
         font-size: 1.2rem;
@@ -25,8 +39,11 @@
     .footer-content {
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
 
       .footer-content-item {
+        font-size: 0.9rem;
+
         .footer-content-item-social {
           .footer-content-item-social-link {
             padding: 0 0 0 1rem;

@@ -1,0 +1,29 @@
+@import "../components/global/layout.scss";
+
+.blog {
+  .blog-content {
+    .page-section.blog-content-blog-posts {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .blog-content-blog-posts-header {
+        .blog-content-blog-posts-title {
+          margin: 0;
+
+          .blog-content-blog-posts-title-link {
+            color: $secondary-color;
+            font-weight: 600;
+          }
+          .blog-content-blog-posts-title-link:hover {
+            color: $ternary-color;
+          }
+        }
+
+        .blog-content-blog-posts-date {
+          font-style: italic;
+          color: #666;
+        }
+      }
+    }
+  }
+}
