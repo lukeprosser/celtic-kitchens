@@ -12,9 +12,20 @@
         justify-content: center;
         align-items: center;
 
-        .portfolio-content-gallery-images-image {
+        .portfolio-content-gallery-images-image-wrapper {
           min-width: 300px;
-          padding: 1rem;
+          padding: 0.5rem;
+          cursor: pointer;
+
+          img {
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateZ(0) scale(1, 1);
+          }
+
+          img:hover {
+            filter: grayscale(70%);
+            transform: scale(1.05);
+          }
         }
       }
     }

@@ -52,11 +52,17 @@ class Portfolio extends Component {
                 <div className="portfolio-content-gallery-images">
                   {galleryImages.map((image, i) => (
                     <div
-                      className="portfolio-content-gallery-images-image"
+                      className="portfolio-content-gallery-images-image-wrapper"
                       key={image.node.id}
                       onClick={() => this.toggleModal(i)}
                     >
-                      <Image fluid={image.node.childImageSharp.fluid} />
+                      <Image
+                        fluid={image.node.childImageSharp.fluid}
+                        className="portfolio-content-gallery-images-image"
+                        imgStyle={{
+                          transition: `all 500ms ease`,
+                        }}
+                      />
                     </div>
                   ))}
                 </div>
