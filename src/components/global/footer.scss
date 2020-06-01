@@ -1,6 +1,7 @@
 @import "./layout.scss";
 
 .footer {
+  margin-top: auto; /* Force to bottom of page (ref Layout inline styles) */
   background-color: $primary-color;
   color: #fff;
 

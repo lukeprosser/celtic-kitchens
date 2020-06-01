@@ -25,7 +25,7 @@
               .contact-content-form-input,
               .contact-content-form-message {
                 width: 100%;
-                border: 1px solid $primary-color;
+                border: 1px solid #aaa;
                 padding: 0.2rem;
               }
 
@@ -45,6 +45,12 @@
     .contact-content {
       .page-section.contact-content-wrapper {
         .container {
+          .contact-content-blurb {
+            p {
+              padding: 0 8rem;
+            }
+          }
+
           .contact-content-form-wrapper {
             display: flex;
             justify-content: space-evenly;
