@@ -25,19 +25,19 @@ Live demo: https://celtickitchens.netlify.app/
 - GraphQL queries pulling images and data (e.g. portfolio images, brand images, blog post markdown etc.)
 - Netlify CMS admin access via https://celtickitchens.netlify.app/admin
 - Header:
-  - Dynamic responsive structure
-  - Mobile hamurger menu
-  - Link animation
+  - Dynamic responsive structure with components for mobile and desktop
+  - Mobile hamburger menu
+  - Link hover transition
 - Home page:
   - Interactive hero carousel slider
 - Portfolio page:
   - Responsive image gallery via Flexbox
-  - Interactive modal carousel built with react-images - displayed on image click, tracking image index
+  - Interactive modal carousel built with react-images - displayed on image click, tracking index to display correct image
 - Blog page:
   - Index of blog posts
   - Blog post pages generated dynamically
   - Blog posts can be created/edited remotely via Netlify CMS
-  - Site build process triggered automaticaly on blog post submission
+  - Site build process triggered automatically on blog post submission
 - Contact page:
   - HTML form validation
   - Form submission email notifications powered by Netlify
@@ -45,6 +45,6 @@ Live demo: https://celtickitchens.netlify.app/
 ## To Do
 
 - Home page:
-  - slider carousel autoplay mode
+  - Slider carousel autoplay mode
 - Location component:
   - Interactive Google Map
