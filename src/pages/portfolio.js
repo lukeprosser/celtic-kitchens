@@ -16,7 +16,6 @@ import "./portfolio.scss"
 class Portfolio extends Component {
   state = { selectedIndex: 0, modalIsOpen: false }
   toggleModal = selectedIndex => {
-    console.log("image clicked")
     this.setState(state => ({ modalIsOpen: !state.modalIsOpen, selectedIndex }))
   }
 

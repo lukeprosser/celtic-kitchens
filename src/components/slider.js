@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 import "./slider.scss"
 
-const Slider = ({ location }) => {
+const Slider = () => {
   const auto = false
   const intervalTime = 5000
   let slideInterval

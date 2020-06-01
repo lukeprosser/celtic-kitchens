@@ -1,0 +1,67 @@
+@import "../components/global/layout.scss";
+
+.contact {
+  .contact-content {
+    .page-section.contact-content-wrapper {
+      padding-top: 0;
+
+      .container {
+        .contact-content-blurb {
+          width: 100%;
+          text-align: center;
+        }
+
+        .contact-content-form {
+          width: 100%;
+          margin-top: 2rem;
+
+          .contact-content-form-group {
+            margin-bottom: 0.7rem;
+
+            .contact-content-form-label {
+              display: block;
+            }
+
+            .contact-content-form-input,
+            .contact-content-form-message {
+              width: 100%;
+              border: 1px solid $primary-color;
+              padding: 0.3rem;
+            }
+
+            .contact-content-form-submit {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .contact {
+    .contact-content {
+      .page-section.contact-content-wrapper {
+        .container {
+          .contact-content-form-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+
+          .contact-content-blurb-message {
+            padding: 2rem;
+          }
+
+          .contact-content-form {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// display: grid;
+// grid-template-columns: repeat(2, 1fr);

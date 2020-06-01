@@ -12,6 +12,7 @@
       align-items: center;
 
       .location-content-address {
+        width: 100%;
         margin-bottom: 2rem;
 
         .location-content-address-detail {
@@ -23,8 +24,18 @@
       }
 
       .location-content-map {
-        .location-content-map-image {
-          min-width: 400px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .location {
+    .container {
+      .location-content {
+        .location-content-map {
+          padding: 0 2rem;
         }
       }
     }
@@ -44,7 +55,7 @@
             font-size: 1.2rem;
           }
           .page-section-header:after {
-            width: 100%;
+            width: 50%;
           }
         }
 
