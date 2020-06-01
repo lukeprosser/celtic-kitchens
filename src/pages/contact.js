@@ -40,7 +40,6 @@ const Contact = ({ data, location }) => {
                 <div className="contact-content-image-wrapper">
                   <Image fluid={data.office.childImageSharp.fluid} />
                 </div>
-
                 <form
                   className="contact-content-form"
                   name="contact-form"
@@ -56,6 +55,7 @@ const Contact = ({ data, location }) => {
                       type="text"
                       name="name"
                       placeholder="Full name"
+                      required
                     />
                   </div>
                   <div className="contact-content-form-group">
@@ -65,6 +65,7 @@ const Contact = ({ data, location }) => {
                       type="email"
                       name="email"
                       placeholder="Email address"
+                      required
                     />
                   </div>
                   <div className="contact-content-form-group full-width">
@@ -74,8 +75,9 @@ const Contact = ({ data, location }) => {
                     <textarea
                       className="contact-content-form-message"
                       name="message"
-                      rows="5"
+                      rows="4"
                       placeholder="Message"
+                      required
                     ></textarea>
                   </div>
                   <div className="contact-content-form-group full-width">
