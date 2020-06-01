@@ -29,6 +29,19 @@
                 padding: 0.2rem;
               }
 
+              .contact-content-form-input::-webkit-input-placeholder,
+              .contact-content-form-message::-webkit-input-placeholder,
+              .contact-content-form-input::-moz-placeholder,
+              .contact-content-form-message::-moz-placeholder,
+              .contact-content-form-input:-ms-input-placeholder,
+              .contact-content-form-message:-ms-input-placeholder,
+              .contact-content-form-input::-ms-input-placeholder,
+              .contact-content-form-message::-ms-input-placeholder,
+              .contact-content-form-input::placeholder,
+              .contact-content-form-message::placeholder {
+                padding-left: 0.3rem;
+              }
+
               .contact-content-form-submit {
                 width: 100%;
               }
@@ -52,8 +65,14 @@
           }
 
           .contact-content-form-wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             .contact-content-image-wrapper {
@@ -68,6 +87,14 @@
               .contact-content-form-label {
                 font-size: 0.9rem;
               }
+              .contact-content-form-input::-webkit-input-placeholder,
+              .contact-content-form-message::-webkit-input-placeholder,
+              .contact-content-form-input::-moz-placeholder,
+              .contact-content-form-message::-moz-placeholder,
+              .contact-content-form-input:-ms-input-placeholder,
+              .contact-content-form-message:-ms-input-placeholder,
+              .contact-content-form-input::-ms-input-placeholder,
+              .contact-content-form-message::-ms-input-placeholder,
               .contact-content-form-input::placeholder,
               .contact-content-form-message::placeholder {
                 font-size: 0.8rem;

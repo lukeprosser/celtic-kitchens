@@ -24,6 +24,8 @@
   .testimonials {
     .container {
       .testimonials-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         .testimonials-content-item {
           margin-bottom: 0;

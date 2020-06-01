@@ -10,6 +10,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -38,6 +40,8 @@
       width: 100%;
       height: 100%;
       opacity: 0;
+      -webkit-transition: opacity 0.7s ease-in-out;
+      -o-transition: opacity 0.7s ease-in-out;
       transition: opacity 0.7s ease-in-out;
     }
 
@@ -45,7 +49,7 @@
       opacity: 1;
     }
 
-    // Background images
+    /* Background images */
     .slider-slide:first-child {
       background: url("../../content/assets/hero/kitchen-01-hero.jpg") no-repeat
         center center/cover;

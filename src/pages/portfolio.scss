@@ -7,9 +7,16 @@
       padding-bottom: 0;
 
       .portfolio-content-gallery-images {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         .portfolio-content-gallery-images-image-wrapper {
@@ -23,7 +30,10 @@
           }
 
           img:hover {
+            -webkit-filter: grayscale(70%);
             filter: grayscale(70%);
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
             transform: scale(1.05);
           }
         }

@@ -54,6 +54,9 @@ class Portfolio extends Component {
                       className="portfolio-content-gallery-images-image-wrapper"
                       key={image.node.id}
                       onClick={() => this.toggleModal(i)}
+                      onKeyDown={() => this.toggleModal(i)}
+                      role="button"
+                      tabIndex="0"
                     >
                       <Image
                         fluid={image.node.childImageSharp.fluid}

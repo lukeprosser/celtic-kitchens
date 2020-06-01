@@ -49,7 +49,12 @@ const Contact = ({ data, location }) => {
                 >
                   <input type="hidden" name="form-name" value="contact-form" />
                   <div className="contact-content-form-group">
-                    <label className="contact-content-form-label">Name</label>
+                    <label
+                      className="contact-content-form-label"
+                      htmlFor="name"
+                    >
+                      Name
+                    </label>
                     <input
                       className="contact-content-form-input"
                       type="text"
@@ -59,7 +64,12 @@ const Contact = ({ data, location }) => {
                     />
                   </div>
                   <div className="contact-content-form-group">
-                    <label className="contact-content-form-label">Email</label>
+                    <label
+                      className="contact-content-form-label"
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
                     <input
                       className="contact-content-form-input"
                       type="email"
@@ -69,7 +79,10 @@ const Contact = ({ data, location }) => {
                     />
                   </div>
                   <div className="contact-content-form-group full-width">
-                    <label className="contact-content-form-label">
+                    <label
+                      className="contact-content-form-label"
+                      htmlFor="message"
+                    >
                       Message
                     </label>
                     <textarea

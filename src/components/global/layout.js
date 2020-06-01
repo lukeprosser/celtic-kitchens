@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 
-import { rhythm, scale } from "../../utils/typography"
+// import { rhythm, scale } from "../../utils/typography"
 import "./layout.scss"
 
 const Layout = ({ location, title, children }) => {

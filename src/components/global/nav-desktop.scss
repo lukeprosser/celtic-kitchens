@@ -6,13 +6,19 @@
 
 @media (min-width: 700px) {
   .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 
     .nav-desktop-brand {
       margin: 0;
-      padding-bottom: 2px; // Compensate for nav-link border
+      padding-bottom: 2px; /* Compensate for nav-link border */
       font-size: 1.4rem;
     }
 
@@ -26,16 +32,27 @@
       display: block;
       content: "";
       border-bottom: 2px solid $secondary-color;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
       transform: scaleX(0);
+      -webkit-transition: -webkit-transform 250ms ease-in-out;
+      transition: -webkit-transform 250ms ease-in-out;
+      -o-transition: transform 250ms ease-in-out;
       transition: transform 250ms ease-in-out;
+      transition: transform 250ms ease-in-out,
+        -webkit-transform 250ms ease-in-out;
     }
     .nav-desktop-link:hover:after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
       transform: scaleX(1);
     }
     .nav-desktop-link.active:after {
       display: block;
       content: "";
       border-bottom: 2px solid $secondary-color;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
       transform: scaleX(1);
     }
   }

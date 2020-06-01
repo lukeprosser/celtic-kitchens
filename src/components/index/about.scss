@@ -15,6 +15,8 @@
   .about {
     .container {
       .about-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         .about-content-item {
           font-size: 0.9rem;

@@ -14,7 +14,13 @@ const NavMobile = ({ title }) => {
       <Link to="/">
         <h1 className="nav-mobile-brand">{title}</h1>
       </Link>
-      <div className="nav-mobile-menu" onClick={() => toggleMenu()}>
+      <div
+        className="nav-mobile-menu"
+        onClick={() => toggleMenu()}
+        onKeyDown={() => toggleMenu()}
+        role="button"
+        tabIndex="0"
+      >
         <span className="nav-mobile-menu-bar1"></span>
         <span className="nav-mobile-menu-bar2"></span>
         <span className="nav-mobile-menu-bar3"></span>
