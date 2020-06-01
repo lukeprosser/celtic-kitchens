@@ -6,7 +6,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import "./slider.scss"
 
 const Slider = () => {
-  const auto = false
+  const auto = false // To do
   const intervalTime = 5000
   let slideInterval
 
